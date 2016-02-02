@@ -1,0 +1,109 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Calculator";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>A quick calculator written as an exercise in MVC development fo Kunz, Leigh and Associates.</p>
+<div class="container">
+    <form id="notTI" method="post">
+
+        <div class="form-group">
+            <div class="col-sm-1 col-kp">
+
+                    <p >
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n7" id="n7" name="submit" />
+                    </p>
+                    <p >
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n4" id="n4" name="submit" />
+                    </p>
+                    <p >
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n1" id="n1" name="submit" />
+                    </p>
+                    <p >
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.rsign" id="rSign" name="submit" />
+                    </p>
+                    <p >
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.clear" id="clear" name="submit" />
+                    </p>
+                </div>
+                <div class="col-sm-1 col-kp">
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n8" id="n8" name="submit" />
+                    </p>
+                    <p >
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n5" id="n5" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n2" id="n2" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n0" id="n0" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.memplus" id="memPlus" name="submit" />
+                    </p>
+
+                </div>
+                <div class="col-sm-1 col-kp">
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n9" id="n9" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n6" id="n6" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.n3" id="n3" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.adddec" id="addDec" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.memrecall" id="memRecall" name="submit" />
+                    </p>
+
+                </div>
+                <div class="col-sm-1 col-kp">
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.divide" id="divide" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.multiply" id="multiply" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.subtract" id="subtract" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.add" id="add" name="submit" />
+                    </p>
+                    <p>
+                        <input type="submit" class="btn-sm btn-kp" value="@ViewBag.calculate" id="calculate" name="submit" />
+                    </p>
+
+                </div>
+            <div class="col-sm-2 col-results">
+                <p>
+                    <input type="text" name="displayvalue" value="@ViewBag.displayvalue" />
+                </p>
+
+                <p class="text-muted p-display">
+                   @ViewBag.recentrunning
+                </p>
+
+                <p>
+                    <input type="text" name="memorystored" hidden value="@ViewBag.memorystored" />
+                    <input type="text" name="runningresult" hidden value="@ViewBag.runningresult" />
+                    <input type="text" name="currentoperation" hidden value="@ViewBag.currentoperation" />
+                    <input type="text" name="prevdisplayvalue" hidden value="@ViewBag.prevdisplayvalue" />
+                    <input type="text" name="prevoperation" hidden value="@ViewBag.prevoperation" />
+               </p>
+                
+            </div>
+           </div>
+    </form>
+</div>
+

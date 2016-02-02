@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Simple programming exercises</h2>
+        <p>
+            I am eating into time beyond 4 hours to write this little blurb here. (I justify that because of spending more than an hour, 2?, downloading
+            and installing all software on my personal machine rather than use my HPE issued device.)
+        </p>
+        <p>
+            Anyhow, the exercise called for code "presentable to a client". In my way of thinking, that means presentable to a client and a dev team.
+        </p>
+        <p>
+            For a client,  you need A) presentation, B) functionality, C) scalability and D) security. 
+            A) I used the full bootstrap CSS application template.
+            B) It works, in a limited maner.
+            C) MVC. 
+            D) I implemented just the basic included Authentication - by using the standard provider, scaling out to other, more secure providers is a matter of
+            just a config change or two.
+        </p>
+        <p>
+            For a dev team, you need A) readability, B) unit testing, C) functional separation of duties including styled GUI, and D) sometimes doughnuts.
+            A) I'm not sure of your naming conventions, so I am pretty much all over the place - sorry.
+            B) I included the unit testing project, but put nothing in there - 4 hours, remember?
+            C) I tried to stay within the bounds of the well-known MS MVC template, including CSS implementations.
+            D) Maybe later - get back to work.
+        </p>
+        <p>
+            Final notes:
+            I realized midway there is no "MC".
+            Something smells wrong with this; not just that pressing = after = is not working correctly. Maybe tried too much too fast.
+            There is no exception handling here - nada, zip. Very bad. I usually tell younger developers, just because line 1 reads "Int x = 32;", be careful 
+            assuming that on line 2 x is not null.
+            I included a custom client-side javascript file, since, in my style of developing, I would usually have much more going on client side. But, then
+            again, in that case I might end up writing the entire thing in javascript, so where then does the MVC go? 
+            And, thanks for the opportunity (including the opportunity to do this exercise - always fun just to go out and build something)
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="~/Home/Calculator">Try it out &raquo;</a></p>
+    </div>
+</div>
